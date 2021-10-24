@@ -1,0 +1,19 @@
+@import 'Src/styles/variables';
+
+.checkbox {
+  appearance: none;
+  width: 100%;
+  font-size: 40px;
+  color: $red;
+  cursor: pointer;
+
+  &::after {
+    content: 'favorite_border';
+  }
+
+  &:checked {
+    &::after {
+      content: 'favorite';
+    }
+  }
+}
